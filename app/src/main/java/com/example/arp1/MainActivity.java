@@ -158,6 +158,8 @@ public class MainActivity extends AppCompatActivity {
                     Node nodecontact = scene.overlapTest(node);
                     if(nodecontact!= null){
                         scene.removeChild(nodecontact);
+                        Talkdialog1 talkdialog1 = new Talkdialog1();
+                        talkdialog1.show(getSupportFragmentManager(),"talk dialog 1");
                     }
 
 
